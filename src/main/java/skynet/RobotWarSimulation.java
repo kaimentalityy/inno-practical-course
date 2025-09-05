@@ -2,7 +2,20 @@ package skynet;
 
 import java.util.Random;
 
+
+/**
+ * Main simulation class for the Robot War.
+ * Simulates 100 days of part production and collection
+ * and determines which faction builds the most robots.
+ */
 public class RobotWarSimulation {
+    /**
+     * Runs the Robot War simulation.
+     * Factory produces parts, factions collect them,
+     * and the winner is determined by the number of complete robots built.
+     *
+     * @param args command-line arguments (not used)
+     */
     public static void main(String[] args) {
         Factory factory = new Factory();
         Faction world = new Faction("World", factory, 5);
