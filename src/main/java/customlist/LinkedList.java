@@ -10,7 +10,7 @@ import java.util.Objects;
  *
  * @param <T> the type of elements held in this list
  */
-public class LinkedList<T> {
+public class LinkedList<T> implements Iterable<T> {
 
     /**
      * Inner class representing a single node in the linked list.
@@ -233,7 +233,7 @@ public class LinkedList<T> {
      * @return an Iterator over the elements in this list
      */
     public Iterator<T> iterator() {
-        return new Iterator<T>() {
+        return new Iterator<>() {
             private Node current = head;
 
             @Override
@@ -283,17 +283,27 @@ public class LinkedList<T> {
      *   <li>The head and tail nodes are equal (recursively compares the linked nodes)</li>
      * </ul>
      *
-     * @param o the object to compare with this list
+     * @param obj the object to compare with this list
      * @return true if the specified object is equal to this list, false otherwise
      */
     @Override
-    public boolean equals(Object o) {
-        if (o == null || getClass() != o.getClass()){
-            return false;
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+
+        LinkedList<?> otherList = (LinkedList<?>) obj;
+
+        if (this.size != otherList.size) return false;
+
+        for (int i = 0; i < size; i++) {
+            if (!Objects.equals(this.get(i), otherList.get(i))) {
+                return false;
+            }
         }
-        LinkedList<?> that = (LinkedList<?>) o;
-        return size == that.size && Objects.equals(head, that.head) && Objects.equals(tail, that.tail);
+
+        return true;
     }
+
 
     /**
      * Returns a hash code value for the list.
@@ -306,7 +316,13 @@ public class LinkedList<T> {
      */
     @Override
     public int hashCode() {
-        return Objects.hash(head, tail, size);
+        int hash = 1;
+        Node current = head;
+        while (current != null) {
+            hash = 31 * hash + (current.data == null ? 0 : current.data.hashCode());
+            current = current.next;
+        }
+        return hash;
     }
 }
 

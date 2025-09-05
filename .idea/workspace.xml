@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c88068f2-480d-4961-bb9d-b79d61d92543" name="Changes" comment="fixed issues">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/customlist/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/customlist/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/customlist/LinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/customlist/LinkedListTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +49,7 @@
         "id": "PR_kwDOPpXOm86nBaRj",
         "number": 3
       },
-      "lastSeen": 1757093550135
+      "lastSeen": 1757100535577
     }
   ]
 }]]></component>
@@ -124,7 +126,7 @@
       <workItem from="1756981574955" duration="1567000" />
       <workItem from="1756994512379" duration="5492000" />
       <workItem from="1757066440697" duration="6051000" />
-      <workItem from="1757093148792" duration="417000" />
+      <workItem from="1757093148792" duration="5574000" />
     </task>
     <task id="LOCAL-00002" summary="Create a sales and customer analysis service">
       <option name="closed" value="true" />
@@ -166,7 +168,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757092843721</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fixed issues">
+      <option name="closed" value="true" />
+      <created>1757093686971</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1757093686971</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
