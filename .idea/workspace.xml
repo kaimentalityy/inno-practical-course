@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c88068f2-480d-4961-bb9d-b79d61d92543" name="Changes" comment="fixed issues">
+      <change beforePath="$PROJECT_DIR$/src/main/java/customlist/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/customlist/LinkedList.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="package-info" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="tasks/sales-and-customer-analysis" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {}
+}</component>
+  <component name="GitHubPullRequestState"><![CDATA[{
+  "prStates": [
+    {
+      "id": {
+        "id": "PR_kwDOPpXOm86nBZdr",
+        "number": 1
+      },
+      "lastSeen": 1757092778095
+    },
+    {
+      "id": {
+        "id": "PR_kwDOPpXOm86nBaRj",
+        "number": 3
+      },
+      "lastSeen": 1757093550135
+    }
+  ]
+}]]></component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/kaimentalityy/inno-practical-course.git&quot;,
+    &quot;accountId&quot;: &quot;5dd9c9ab-6cb9-43e5-8603-27f558fec572&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="32EN3StTg0jZZOGDLcPjuokP2O4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.CustomLinkedList [clean,test].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "#3 on tasks/linked-list",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean test" />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.25557.131" />
+        <option value="bundled-js-predefined-d6986cc7102b-b598e85cdad2-JavaScript-IU-252.25557.131" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task id="LOCAL-00001" summary="Added JavaDocs">
+      <option name="closed" value="true" />
+      <created>1756935761086</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1756935761086</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c88068f2-480d-4961-bb9d-b79d61d92543" name="Changes" comment="Added JavaDocs" />
+      <created>1756981573563</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1756981573563</updated>
+      <workItem from="1756981574955" duration="1567000" />
+      <workItem from="1756994512379" duration="5492000" />
+      <workItem from="1757066440697" duration="6051000" />
+      <workItem from="1757093148792" duration="417000" />
+    </task>
+    <task id="LOCAL-00002" summary="Create a sales and customer analysis service">
+      <option name="closed" value="true" />
+      <created>1757009473079</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1757009473079</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Create a simulation of a robot war">
+      <option name="closed" value="true" />
+      <created>1757067235811</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1757067235811</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added JavaDoc">
+      <option name="closed" value="true" />
+      <created>1757067874085</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1757067874085</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added JavaDoc">
+      <option name="closed" value="true" />
+      <created>1757067988634</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1757067988634</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fixed issues">
+      <option name="closed" value="true" />
+      <created>1757092843721</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1757092843721</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added JavaDocs" />
+    <MESSAGE value="Create a sales and customer analysis service" />
+    <MESSAGE value="Create a simulation of a robot war" />
+    <MESSAGE value="Added JavaDoc" />
+    <MESSAGE value="fixed issues" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed issues" />
+  </component>
+</project>
