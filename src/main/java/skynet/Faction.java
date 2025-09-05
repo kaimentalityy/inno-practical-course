@@ -33,7 +33,7 @@ public class Faction {
     /**
      * Collects available parts from the factory up to the allowed maximum.
      */
-    public void collectParts() {
+    public synchronized void collectParts() {
         List<Part> taken = factory.takeParts(maxPartsPerNight);
         collectedParts.addAll(taken);
     }
@@ -46,12 +46,15 @@ public class Faction {
      */
     public int getCompleteRobots() {
         Map<Part, Long> partCount = new EnumMap<>(Part.class);
-        for (Part part : collectedParts) {
-            partCount.put(part, partCount.getOrDefault(part, 0L) + 1);
+
+        for (Part part : Part.values()) {
+            partCount.put(part, 0L);
         }
-        return partCount.size() < Part.values().length
-                ? 0
-                : Collections.min(partCount.values()).intValue();
+        for (Part part : collectedParts) {
+            partCount.put(part, partCount.get(part) + 1);
+        }
+        return Collections.min(partCount.values()).intValue();
     }
+
 }
 
