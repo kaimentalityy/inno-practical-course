@@ -60,7 +60,8 @@ public class OrderAnalysisService {
         Objects.requireNonNull(orders, "Orders list cannot be null");
 
         Map<String, Integer> productSales = orders.stream()
-                .filter(order -> order.getStatus() != OrderStatus.CANCELLED)
+                .filter(order -> order.getStatus() == OrderStatus.DELIVERED
+                        || order.getStatus() == OrderStatus.SHIPPED)
                 .flatMap(order -> order.getItems().stream())
                 .collect(Collectors.groupingBy(
                         OrderItem::getProductName,
@@ -72,6 +73,7 @@ public class OrderAnalysisService {
                 .map(Map.Entry::getKey)
                 .orElse("No products found");
     }
+
 
     /**
      * Calculates the average order value for successfully delivered orders.
@@ -108,12 +110,14 @@ public class OrderAnalysisService {
 
         return orders.stream()
                 .filter(order -> order.getCustomer() != null)
+                .filter(order -> order.getStatus() == OrderStatus.DELIVERED
+                        || order.getStatus() == OrderStatus.SHIPPED)
                 .collect(Collectors.groupingBy(
                         Order::getCustomer,
                         Collectors.counting()
                 ))
                 .entrySet().stream()
-                .filter(entry -> entry.getValue() > minOrderCount)
+                .filter(entry -> entry.getValue() >= minOrderCount)
                 .map(Map.Entry::getKey)
                 .collect(Collectors.toList());
     }
@@ -127,24 +131,5 @@ public class OrderAnalysisService {
      */
     public static List<Customer> findCustomersWithMoreThanFiveOrders(List<Order> orders) {
         return findFrequentCustomers(orders, 5);
-    }
-
-    /**
-     * Analyzes sales distribution across different product categories.
-     *
-     * @param orders the list of orders to analyze
-     * @return a {@link Map} of category to total revenue generated
-     * @throws NullPointerException if orders list is null
-     */
-    public static Map<Category, Double> analyzeRevenueByCategory(List<Order> orders) {
-        Objects.requireNonNull(orders, "Orders list cannot be null");
-
-        return orders.stream()
-                .filter(order -> order.getStatus() == OrderStatus.DELIVERED)
-                .flatMap(order -> order.getItems().stream())
-                .collect(Collectors.groupingBy(
-                        OrderItem::getCategory,
-                        Collectors.summingDouble(item -> item.getQuantity() * item.getPrice())
-                ));
     }
 }
